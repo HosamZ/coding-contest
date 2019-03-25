@@ -1,3 +1,5 @@
+package coordinates;
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -39,7 +41,7 @@ public class Coordinator {
         writer.append(List.of(s), "/home/hosam/programming/coding-contest/coding-contest/src/text_answer.txt");
 
         alien.setCoordinate(coordinate);
-        alien.setDirection("East");
+        alien.setDirection("directions.East");
 
         while (!splittedPath.isEmpty()) {
             String stringPath = splittedPath.poll();

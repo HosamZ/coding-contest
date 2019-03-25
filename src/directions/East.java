@@ -1,23 +1,28 @@
+package directions;
+
+import coordinates.Coordinate;
+import filesreaderswriters.FileWriter;
+
 import java.util.List;
 
-public class South implements Direction {
+public class East implements Direction {
 
     private FileWriter writer = new FileWriter();
 
     @Override
     public String getName() {
-        return "South";
+        return "directions.East";
     }
 
     @Override
     public Coordinate calculate(Coordinate coordinate, int steps) {
-
         for (int i = 0; i < steps; i++) {
 
-            int currentY = coordinate.getY() - 1;
-            coordinate.setY(currentY);
+            int currentX = coordinate.getX() + 1;
+            coordinate.setX(currentX);
 
             String s = coordinate.toString();
+//            writer.append(List.of(s), "text_answer.txt");
             writer.append(List.of(s), "/home/hosam/programming/coding-contest/coding-contest/src/text_answer.txt");
 
         }

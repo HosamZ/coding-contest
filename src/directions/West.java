@@ -1,3 +1,8 @@
+package directions;
+
+import coordinates.Coordinate;
+
+import filesreaderswriters.FileWriter;
 import java.util.List;
 
 public class West implements Direction {
@@ -6,7 +11,7 @@ public class West implements Direction {
 
     @Override
     public String getName() {
-        return "West";
+        return "directions.West";
     }
 
 

@@ -1,3 +1,5 @@
+package coordinates;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,7 +18,7 @@ public class Coordinate {
     private int y;
 //    private String direction;
 /*
-    public Coordinate(int x, int y) {
+    public coordinates.Coordinate(int x, int y) {
         this.x = x;
         this.y = y;
     }*/

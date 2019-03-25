@@ -1,3 +1,6 @@
+package data;
+
+import coordinates.Coordinate;
 import lombok.Data;
 
 @Data

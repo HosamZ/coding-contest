@@ -1,12 +1,17 @@
+package directions;
+
+import coordinates.Coordinate;
+
+import filesreaderswriters.FileWriter;
 import java.util.List;
 
-public class North implements Direction {
+public class South implements Direction {
 
     private FileWriter writer = new FileWriter();
 
     @Override
     public String getName() {
-        return "North";
+        return "directions.South";
     }
 
     @Override
@@ -14,16 +19,13 @@ public class North implements Direction {
 
         for (int i = 0; i < steps; i++) {
 
-            int currentY = coordinate.getY() + 1;
+            int currentY = coordinate.getY() - 1;
             coordinate.setY(currentY);
 
             String s = coordinate.toString();
-//            writer.append(List.of(s), "text_answer.txt");
-//            writer.append(List.of(s), "/home/hosam/programming/coding-contest/coding-contest/src/text_answer.txt");
             writer.append(List.of(s), "/home/hosam/programming/coding-contest/coding-contest/src/text_answer.txt");
 
         }
-
 
         return coordinate;
     }
